@@ -1,0 +1,10 @@
+.header {
+  background-color: azure;
+}
+
+.logo {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #180b8d 0%, #110011 100%);
+  font-size: 20vw;
+  font-family: "Poppins", "Roboto";
+}
