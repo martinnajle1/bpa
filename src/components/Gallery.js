@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Gallery from "react-grid-gallery";
+import Grid from './Grid';
 import Strapi from "strapi-sdk-javascript/build/main";
 
 const apiUrl = process.env.API_URL || "http://localhost:1337";
@@ -30,8 +31,8 @@ const MyGallery = () => {
   const mapProducts = (data) => {
     const shoes = data?.botins?.map((p) => {
       return {
-        src: apiUrl + p.images[0].url,
-        thumbnail: apiUrl + p.images[0].url,
+        src: apiUrl + p.images[0]?.url,
+        thumbnail: apiUrl + p.images[0]?.url,
         caption: `${p.Marca} - ${p.Modelo}`,
         thumbnailWidth: 300,
         thumbnailHeight: 300,
@@ -45,6 +46,7 @@ const MyGallery = () => {
     const data = await loadProducts();
   }, []);
   console.log("prod", products);
-  return <Gallery images={products} enableImageSelection={false} />;
+  //return <Gallery images={products} enableImageSelection={false} />;
+  return <Grid products={products} />;
 };
 export default MyGallery;

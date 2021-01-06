@@ -1,0 +1,30 @@
+.products-list {
+	display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: auto;
+	column-gap: 10px;
+	row-gap: 10px;
+}
+
+.products-list .card {
+    border: 2px solid #ecf0f1;
+    background-color: #ffffff;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.products-list .card:hover {
+    border: 2px solid #f35105;
+}
+
+
+.products-list .card span {
+    color: gray;
+    font-weight: bold;
+}
+
+.products-list .card img {
+    width: 85%;
+}
