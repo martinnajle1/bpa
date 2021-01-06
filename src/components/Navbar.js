@@ -16,7 +16,7 @@ const Navbar = () => {
       justifyContent="start"
       alignItems="center"
       color="white"
-      marginLeft={10}
+      marginLeft={5}
     >
 
       <NavLink to="/" activeClassName="active" className="menu-item">
