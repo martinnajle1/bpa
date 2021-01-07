@@ -1,0 +1,14 @@
+{
+  "kind": "singleType",
+  "collectionName": "talles",
+  "info": {
+    "name": "talles",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {}
+}

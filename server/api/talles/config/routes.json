@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/talles",
+      "handler": "talles.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/talles",
+      "handler": "talles.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/talles",
+      "handler": "talles.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
